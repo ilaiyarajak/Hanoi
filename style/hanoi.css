@@ -1,0 +1,48 @@
+@font-face {
+font-family: Mammals;
+src: url(font/AFRIWB__.TTF);
+}
+body{
+	color: rgb(139, 168, 119) !important;
+}
+#idIndexPage
+{
+}
+#idGamePage{
+}
+.clsContainer
+{
+	float:left;
+	width:32.5%;
+}
+#idContainer1
+{
+	border:1px solid red;
+}
+#idContainer2
+{
+	border:1px solid blue;
+}
+#idContainer3
+{
+	border:1px solid green;
+}
+.clsMammalfont{
+font-family: Mammals;
+}
+.clsItemFont
+{
+ /*font-size:500%;*/
+}
+
+.clsPlace
+{
+	/* text-align:center; */
+	padding: 1%;
+	border-radius:50%;
+}
+.ui-footer
+{
+	font-size: 11px;
+	padding: 0.5%;
+}

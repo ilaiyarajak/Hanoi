@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" type="text/css" href="style/jquery.mobile-1.4.0.css" >
+		<link rel="stylesheet" type="text/css" href="style/hanoi.css">
+		
+		<script src="script/jquery-1.11.0.js" ></script>
+		<script src="script/jquery.mobile-1.4.0.js" ></script>
+		<link rel="stylesheet" type="text/css" href="style/pure-min.css">
+		<script src="script/hanoi.js" ></script>
+		<script src="script/initData.js" ></script>
+		<script src="script/functions.js" ></script>
+		
+        <title>Hanoi</title>
+    </head>
+    <body>
+	
+        <div id="home" data-role="page" data-theme="b">
+		
+			<div data-role="header">
+				<h1>Hanoi</h1>
+			</div><!-- /header -->
+			<div role="main" class="ui-content">
+				<center>
+				<a href="#hanoi" data-role="button" id="idBtnNewGame" >New Game</a>
+				<a href="#hanoi" data-role="button" id="idBtnContinueGame" >Continue</a>
+				<a href="#idPopupBasic" data-role="button" id="idBtnLevel" data-rel="popup" class="" data-transition="pop">Level</a>
+				<a href="#instructions" data-role="button" id="idBtninstructions">Instructions</a>
+				<a href="#aboutme" data-role="button" id="idBtnAboutMe">About Me</a>
+				</center>
+			</div><!-- /content -->
+			<div data-role="footer">
+				<h4>Copyright @ IlaiyarajaK</h4>
+			</div><!-- /footer -->
+			<div data-role="popup" id="idPopupBasic" class="ui-content" style="max-width:280px">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+				<div id="idPopupContentDiv" ></div>
+			</div>
+		</div>
+		
+        <div id="hanoi" data-role="page" data-theme="b">
+			<div data-role="header">
+				<a href="#home" class="ui-btn-left" data-icon="back" data-iconpos="notext"  data-direction="reverse">Back</a>
+				<h1>Hanoi</h1>
+				<a href="#home" class="ui-btn-right" data-icon="home" data-iconpos="notext"  data-direction="reverse">Home</a>
+			</div><!-- /header -->
+			<div role="main" class="ui-content">
+				<center>
+					
+					<div class="ui-grid-c">
+						<div class="ui-block-a" id="idHanoiClicksCountDiv">Clicks:0</div>
+						<div class="ui-block-b" id="idHanoiMovesCountDiv">Moves:0</div>
+						<div class="ui-block-c" id="idHanoiLevelDiv">Level:0</div>
+						<div class="ui-block-c"  id="idHanoiDurCountDiv">Dur:00:00:00</div>
+					</div><!-- /grid-b --><br />
+					<div id="idContainer1" class="clsContainer clsItemFont">
+						
+					</div>
+		
+					<div id="idContainer2" class="clsContainer clsItemFont">
+						
+					</div>
+		
+					<div id="idContainer3" class="clsContainer clsItemFont">
+						
+					</div>
+				</center>
+			</div><!-- /content -->
+		<div data-role="footer">
+			<h4>Copyright @ IlaiyarajaK</h4>
+		</div><!-- /footer -->
+	</div>
+	<div id="instructions" data-role="page" data-theme="b">
+			<div data-role="header">
+				<a href="#home" class="ui-btn-left" data-icon="back" data-iconpos="notext"  data-direction="reverse">Home</a>
+				<h1>Hanoi</h1>
+				<a href="#home" class="ui-btn-right" data-icon="home" data-iconpos="notext"  data-direction="reverse">Home</a>
+			</div><!-- /header -->
+			<div role="main" class="ui-content">
+					<ul>
+						<li>Goal is to move all disks from 1st container to any of the other container.</li>
+						<li>You can select only top of the disk of any container[Stack].</li>
+						<li>To select a disk click on the container.</li>
+						<li>To deselect click on the same container.</li>
+						<li>To move after select, click any of other container.</li>
+						<li>Move only one disk at a time.</li>
+						<li>A larger disk cannot be placed on top of a smaller disk.</li>
+					</ul>
+			</div><!-- /content -->
+		<div data-role="footer">
+			<h4>Copyright @ IlaiyarajaK</h4>
+		</div><!-- /footer -->
+	</div>
+	<div id="aboutme" data-role="page" data-theme="b">
+			<div data-role="header">
+				<a href="#home" class="ui-btn-left" data-icon="back" data-iconpos="notext"  data-direction="reverse">Home</a>
+				<h1>Hanoi</h1>
+				<a href="#home" class="ui-btn-right" data-icon="home" data-iconpos="notext"  data-direction="reverse">Home</a>
+			</div><!-- /header -->
+			<div role="main" class="ui-content">
+				<center>
+					<p>
+					I am <b>Ilaiyaraja</b>
+					</p>
+				</center>
+			</div><!-- /content -->
+		<div data-role="footer">
+			<h4>Copyright @ IlaiyarajaK</h4>
+		</div><!-- /footer -->
+	</div>
+    </body>
+</html>
