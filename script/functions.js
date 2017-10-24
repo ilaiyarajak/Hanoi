@@ -156,16 +156,16 @@ checkSccess=function($to)
 	}
 }
 
+getLevelToLoad_Disbaled=function(){
+	console.log('getLevelToLoad. levelPlaying Before:='+ localStorage.levelPlaying);
+	return localStorage.levelPlaying;
+}
 getLevelToLoad=function(){
 	console.log('getLevelToLoad. levelPlaying Before:='+ localStorage.levelPlaying);
-	//if(localStorage.levelPlaying!=0 && localStorage.levelPlaying && localStorage.levelPlaying!='undefined')
+	if(localStorage.levelPlaying)
 		return localStorage.levelPlaying;
-	/*else
-	{
-		setLevelplaying(1);
+	else
 		return 1;
-	}*/
-    //console.log('getLevelToLoad. levelPlaying After:='+ localStorage.levelPlaying);
 }
 setLevelplaying=function(levelPlaying)
 {
